@@ -1,5 +1,5 @@
 # Advance JS - GSpotify Search
-* Exemple web app - GSpotify Search
+* The simple exemple web app - GSpotify Search
 * [Online demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/)
 
 ## Using
