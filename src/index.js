@@ -57,7 +57,6 @@ $(document).ready(function () {
     let scopes = encodeURIComponent("user-read-private");
     let urlAuth = `https://accounts.spotify.com/en/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&scope=${scopes}`;
 
-    //console.log(urlAuth);
     btnAuth.click(function () {
         $(location).attr('href', urlAuth);
     });
@@ -90,7 +89,7 @@ $(document).ready(function () {
                 }
             },
             error: function (error) {
-                showErrorMessages(error)
+                showErrorMessages(error);
             }
         });
     });

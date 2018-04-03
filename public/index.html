@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="application/json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Public</title>
+    <title>GSpotify Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="logo">
+        <img src="images/Spotify_Logo_RGB_Green.png" alt="" class="main-logo">
+    </div>
     <div id="auth">
+        <h3>1. First step - Authorization with your Spotify account</h3>
         <button id="btnAuth" type="button">Authorize me now!</button>
     </div>
-    <div id="container">
+    <div id="container" class="common-style">
+        <h3>2. Search artists and tracks (songs) on Spotify</h3>
         <form action="#">
             <select name="slMarket" id="slMarket">
                 <option value="se" selected>Sweden</option>
@@ -25,10 +31,8 @@
             <button type="button" id="btnSearch">Search on Spotify</button>
         </form>
     </div>
+    <div id="dspSearchResults"></div>
 
-    <div id="dspSearchResults">
-
-    </div>
     <script src="build/bundle.js"></script>
 </body>
 </html>
