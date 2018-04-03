@@ -2,8 +2,11 @@
 * Exemple web app - GSpotify Search
 * [Online demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/)
 
-## Notes
-* Create and login with your account on Spotify.com before using this app.
+## Using
+* Before using this app:
+    * Create and login with your account on Spotify.com.
+    * Get your `client_id` and config `redirect_uri` in your Dashboard on Spotify Development.
+    * View more information on [Spotify - App Settings](https://beta.developer.spotify.com/documentation/general/guides/app-settings/)
 * Read jQuery - Ajax [here...](http://api.jquery.com/jquery.ajax/)
 
 ## References for API
