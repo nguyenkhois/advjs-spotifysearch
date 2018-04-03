@@ -2,7 +2,8 @@
 * The simple example web app which using Spotify API
 * [Online demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/)
 
-## Screen shot
+## Screenshot
+![Screenshot](public/images/gspotifysearch.png)
 
 ## Using
 * Please read before testing this app:
