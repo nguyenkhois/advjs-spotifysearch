@@ -2,6 +2,8 @@
 * The simple example web app which using Spotify API
 * [Online demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/)
 
+## Screen shot
+
 ## Using
 * Please read before testing this app:
     * Create and login with your account on Spotify.com.
