@@ -1,5 +1,6 @@
 # Advance JS - GSpotify Search
-Exemple web app - GSpotify Search
+* Exemple web app - GSpotify Search
+* [Online demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/)
 
 ## Notes
 * Create and login with your account on Spotify.com before using this app.
