@@ -71,7 +71,7 @@ $(document).ready(function () {
    //MAIN
     //-----Authorization the user-----
     let client_id = "a91bb3ab45564792a631d13655d609f5";
-    let redirect_uri = encodeURIComponent("http://localhost:3000");
+    let redirect_uri = encodeURIComponent("https://nguyenkhois.github.io/advjs-spotifysearch/public/");
     let response_type = "token";
     let scopes = encodeURIComponent("user-read-private");
     let urlAuth = `https://accounts.spotify.com/en/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&scope=${scopes}`;
