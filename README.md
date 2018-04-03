@@ -5,7 +5,7 @@
 ## Using
 * Before using this app:
     * Create and login with your account on Spotify.com.
-    * Get your `client_id` and config `redirect_uri` in your Dashboard on Spotify Development.
+    * Get your `client_id` and config `redirect_uri` in your Dashboard on [Spotify Development](https://beta.developer.spotify.com/).
     * View more information on [Spotify - App Settings](https://beta.developer.spotify.com/documentation/general/guides/app-settings/)
 * Read jQuery - Ajax [here...](http://api.jquery.com/jquery.ajax/)
 
