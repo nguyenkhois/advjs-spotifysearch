@@ -25,7 +25,8 @@
     "copystyle": "cp ./src/style.css ./public/style.css",
     "copyindex": "cp ./src/index.html ./public/index.html",
     "copyimages": "cp -r ./src/images ./public/images",
-    "rebuild": "npm run build && npm run copystyle && npm run copyindex && npm run copyimages"
+    "removeimages":"rm -r ./public/images",
+    "rebuild": "npm run build && npm run copystyle && npm run copyindex && npm run removeimages && npm run copyimages"
   },
   "author": "Khoi Le",
   "license": "ISC"

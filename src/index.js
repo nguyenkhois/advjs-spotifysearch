@@ -10,6 +10,7 @@ $(document).ready(function () {
     let btnSearch = $("#btnSearch");
     let btnAuth = $("#btnAuth");
     let dspSearchResults = $("#dspSearchResults");
+    let imageNotFound = "images/imagenotfound.png";
 
    //Functions
     function getParamFromUrl(param){
@@ -36,9 +37,11 @@ $(document).ready(function () {
         let trackImage;
         if (objTrack.album.images.length > 2)
             trackImage = objTrack.album.images[2].url;
+        else
+            trackImage = imageNotFound;
 
         return `<article>
-                    <img src="${trackImage}" alt="">
+                    <img src="${trackImage}" alt="" class="image">
                     <p>Album type: ${objTrack.album.album_type}</p>
                     <p>Track name: ${objTrack.name}</p>
                     <p>Artist: ${objTrack.artists[0].name}</p>
@@ -53,13 +56,14 @@ $(document).ready(function () {
         }
     }
     function renderArtist(objArtist) {
-        console.log(objArtist);
         let artistImage;
         if (objArtist.images.length > 2)
             artistImage = objArtist.images[2].url;
+        else
+            artistImage = imageNotFound;
 
         return `<article>
-                    <img src="${artistImage}" alt="">
+                    <img src="${artistImage}" alt="" class="image">
                     <p>Artist name: ${objArtist.name}</p>
                 </article>`;
     }
@@ -76,11 +80,13 @@ $(document).ready(function () {
     let scopes = encodeURIComponent("user-read-private");
     let urlAuth = `https://accounts.spotify.com/en/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&scope=${scopes}`;
 
-    btnAuth.click(function () {
+    btnAuth.click(function (event) {
+        event.preventDefault();
         $(location).attr('href', urlAuth);
     });
     //-----End of authorization the user-----
 
+    //-----Begin search from API-----
     btnSearch.click(function () {
         let searchMarket = slMarket.val();
         let searchBy = slSearchBy.val();
@@ -88,7 +94,7 @@ $(document).ready(function () {
 
         let urlSearch = `https://api.spotify.com/v1/search?q=${searchContent}&type=${searchBy}&market=${searchMarket}`;
         let accessToken = getParamFromUrl('access_token');
-        console.log(urlSearch,accessToken);
+        //console.log(urlSearch,accessToken);
 
         $.ajax({url: urlSearch,
             accepts: 'application/json',
@@ -112,4 +118,5 @@ $(document).ready(function () {
             }
         });
     });
+    //-----End of search from API-----
 });

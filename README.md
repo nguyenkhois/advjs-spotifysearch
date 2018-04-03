@@ -9,6 +9,15 @@
     * View more information on [Spotify - App Settings](https://beta.developer.spotify.com/documentation/general/guides/app-settings/)
 * [Read more about jQuery - Ajax](http://api.jquery.com/jquery.ajax/)
 
+## Changelog
+### Version beta 1 (2018-04-03)
+* Completed requirements for this example
+    * Using Spotify API
+    * Authorization
+    * Get tracks/ artists from API
+* Extra works
+    * Search by chosen market (Sweden or US)
+
 ## References for API
 * [Spotify - Authorization Scopes](https://beta.developer.spotify.com/documentation/general/guides/scopes/)
 * [Spotify - Search for an Item](https://beta.developer.spotify.com/documentation/web-api/reference/search/search/)
