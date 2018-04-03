@@ -1,4 +1,4 @@
-//Will import jQuery here. Don't forget it!!!
+//Import jQuery here. Don't forget it!!!
 import $ from "jquery"
 
 //Beginning for app
@@ -33,7 +33,10 @@ $(document).ready(function () {
         }
     }
     function renderTrack(objTrack) {
-        let trackImage = objTrack.album.images[2].url;
+        let trackImage;
+        if (objTrack.album.images.length > 2)
+            trackImage = objTrack.album.images[2].url;
+
         return `<article>
                     <img src="${trackImage}" alt="">
                     <p>Album type: ${objTrack.album.album_type}</p>
@@ -44,14 +47,30 @@ $(document).ready(function () {
     }
     function showArtists(objArtists) {
         console.log(objArtists);
+        dspSearchResults.html("");
+        for(let i in objArtists.artists.items){
+            dspSearchResults.append(renderArtist(objArtists.artists.items[i]));
+        }
+    }
+    function renderArtist(objArtist) {
+        console.log(objArtist);
+        let artistImage;
+        if (objArtist.images.length > 2)
+            artistImage = objArtist.images[2].url;
+
+        return `<article>
+                    <img src="${artistImage}" alt="">
+                    <p>Artist name: ${objArtist.name}</p>
+                </article>`;
     }
     function showErrorMessages(objError) {
         console.log(objError);
+        dspSearchResults.html("Data not found!")
     }
 
    //MAIN
     //-----Authorization the user-----
-    let client_id = "a91bb3ab45564792a631d13655d609f5";
+    let client_id = "a91bb3ab45564792a631d13655d";
     let redirect_uri = encodeURIComponent("http://localhost:3000");
     let response_type = "token";
     let scopes = encodeURIComponent("user-read-private");
