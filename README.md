@@ -15,6 +15,7 @@
     * Using Spotify API
     * Authorization
     * Get tracks/ artists from API
+    * A link to Spotify for listening a track
 * Extra works
     * Search by chosen market (Sweden or US)
 
