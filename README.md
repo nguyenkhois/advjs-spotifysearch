@@ -19,6 +19,8 @@
     * Authorization
     * Get tracks/ artists from API
     * A link to Spotify for listening a track
+    * Show error message when data not found
+    * Show "image not found" when artist image or track image not found
 * Extra works
     * Search by chosen market (Sweden or US)
 
