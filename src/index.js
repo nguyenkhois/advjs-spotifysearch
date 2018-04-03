@@ -70,7 +70,7 @@ $(document).ready(function () {
 
    //MAIN
     //-----Authorization the user-----
-    let client_id = "a91bb3ab45564792a631d13655d609f5";
+    let client_id = "YOUR_CLIENT_ID";
     let redirect_uri = encodeURIComponent("https://nguyenkhois.github.io/advjs-spotifysearch/public/");
     let response_type = "token";
     let scopes = encodeURIComponent("user-read-private");
