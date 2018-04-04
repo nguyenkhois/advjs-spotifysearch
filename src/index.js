@@ -75,10 +75,19 @@ $(document).ready(function () {
    //MAIN
     //-----Authorization the user-----
     let client_id = "YOUR_CLIENT_ID";
-    let redirect_uri = encodeURIComponent("https://nguyenkhois.github.io/advjs-spotifysearch/public/");
+    let redirect_uri = encodeURIComponent("YOUR_URI");
     let response_type = "token";
     let scopes = encodeURIComponent("user-read-private");
     let urlAuth = `https://accounts.spotify.com/en/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&scope=${scopes}`;
+
+    let accessToken = getParamFromUrl('access_token') || "";
+    if (accessToken === ""){
+        btnAuth.prop('disabled', false);
+        btnSearch.prop('disabled', true);
+    }else{
+        btnAuth.prop('disabled', true);
+        btnSearch.prop('disabled', false);
+    }
 
     btnAuth.click(function (event) {
         event.preventDefault();
@@ -93,7 +102,7 @@ $(document).ready(function () {
         let searchContent = encodeURIComponent(txtSearchContent.val());
 
         let urlSearch = `https://api.spotify.com/v1/search?q=${searchContent}&type=${searchBy}&market=${searchMarket}`;
-        let accessToken = getParamFromUrl('access_token');
+
         //console.log(urlSearch,accessToken);
 
         $.ajax({url: urlSearch,
