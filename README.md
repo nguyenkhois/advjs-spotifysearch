@@ -6,9 +6,9 @@
 ![Screenshot](public/images/gspotifysearch.png)
 
 ## Using
-* Please read before testing this app:
-    * Create and login with your account on Spotify.com.
-    * Get your `client_id` and config `redirect_uri` in your Dashboard on [Spotify Development](https://beta.developer.spotify.com/) and change them in `src/index.js` before you rebuild this app for end result.
+* Please read carefully before using this example:
+    * Create and sign in your account on [Spotify](https://www.spotify.com/).
+    * Get your `client_id` and config `redirect_uri` in your Dashboard on [Spotify Development](https://beta.developer.spotify.com/) then change these variables values in `src/index.js` before you rebuild this app for end result.
     * View more information on [Spotify - App Settings](https://beta.developer.spotify.com/documentation/general/guides/app-settings/)
 * [Read more about jQuery - Ajax](http://api.jquery.com/jquery.ajax/)
 
