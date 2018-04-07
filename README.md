@@ -1,7 +1,8 @@
 # Advance JS - GSpotifySearch
 * The simple example web app which using Spotify API
-* Pure JavaScript version ([`pure-js branch`](https://github.com/nguyenkhois/advjs-spotifysearch/tree/pure-js) - [Demo](https://nguyenkhois.github.io/advjs-spotifysearch/demo-purejs/))
-* jQuery version (master branch - [Demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/))
+* Versions:
+    * Pure JavaScript version ([`pure-js branch`](https://github.com/nguyenkhois/advjs-spotifysearch/tree/pure-js) - [Demo](https://nguyenkhois.github.io/advjs-spotifysearch/demo-purejs/))
+    * jQuery version (master branch - [Demo](https://nguyenkhois.github.io/advjs-spotifysearch/public/))
 
 ## Screenshot
 ![Screenshot](public/images/gspotifysearch.png)
