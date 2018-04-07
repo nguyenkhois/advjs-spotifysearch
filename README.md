@@ -13,6 +13,8 @@
 * [Read more about jQuery - Ajax](http://api.jquery.com/jquery.ajax/)
 
 ## Changelog
+### Version beta 2 (2018-04-07)
+* Refactored from jQuery to pure JS
 ### Version beta 1 (2018-04-03)
 * Completed requirements for this example
     * Using Spotify API
