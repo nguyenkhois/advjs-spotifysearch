@@ -16,16 +16,14 @@
     "webpack-dev-server": "^3.1.1",
     "webpack-notifier": "^1.6.0"
   },
-  "dependencies": {
-    "jquery": "^3.3.1"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "copystyle": "cp ./src/style.css ./public/style.css",
     "copyindex": "cp ./src/index.html ./public/index.html",
     "copyimages": "cp -r ./src/images ./public/images",
-    "removeimages":"rm -r ./public/images",
+    "removeimages": "rm -r ./public/images",
     "rebuild": "npm run build && npm run copystyle && npm run copyindex && npm run removeimages && npm run copyimages"
   },
   "author": "Khoi Le",
